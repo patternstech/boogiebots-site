@@ -5,9 +5,11 @@ Landing page for BoogieBots.ai, a dancing, talking, stand-up comedy robot availa
 Static HTML/CSS/JS with no build step. Open `index.html` to preview.
 
 ## Adding content later
+
 `index.html` has hidden `videos`, `gallery` and `packages` sections. Remove the `hidden` attribute and add content. Put media in `assets/`.
 
 ## Hosting
-GitHub Pages (main branch, root). For the custom domain, point DNS to GitHub Pages:
-- `A` records for `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-- `CNAME` record for `www`: `patternstech.github.io`
+
+The site is deployed to Azure Static Web Apps from the `main` branch by the GitHub Actions workflow in `.github/workflows/azure-static-web-apps.yml`. The app uses the Free plan and requires the `AZURE_STATIC_WEB_APPS_API_TOKEN` repository secret.
+
+The Azure deployment endpoint is `green-pond-0e4f51910.6.azurestaticapps.net`. Configure `www.boogiebots.ai` as a custom domain on that app after its DNS CNAME points to this endpoint. GoDaddy forwarding sends the root domain to `www`.
