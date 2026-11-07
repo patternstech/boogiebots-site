@@ -1,12 +1,23 @@
 # BoogieBots.ai
 
-Landing page for BoogieBots.ai, a dancing, talking, stand-up comedy robot available for rent in Texas. Operated by Patterns Tech LLC.
+Website for BoogieBots.ai, robot and tech entertainment for parties and events in Texas. Operated by Patterns Tech LLC.
 
-Static HTML/CSS/JS with no build step. Open `index.html` to preview.
+Static HTML/CSS/JS with no build step. Pages use root-relative paths (`/css/...`), so preview through a local server (for example `npx serve .`) rather than opening the files directly.
 
-## Adding content later
+## Pages
 
-`index.html` has hidden `videos`, `gallery` and `packages` sections. Remove the `hidden` attribute and add content. Put media in `assets/`.
+- `index.html`: home page with the six service tiles
+- `services.html`: one section per service (`#humanoid`, `#vr`, `#sketch`, `#print`, `#laser`, `#photobooth`) with photo galleries
+- `packages.html`: placeholder until packages are ready
+- `contact.html`: contact details and an inquiry form that opens the visitor's email app. `?service=NAME` pre-checks a service.
+
+Shared styles are in `css/styles.css` and behavior is in `js/main.js`.
+
+## Adding photos and videos
+
+Put files in `assets/images/` (WebP, about 1000px wide) or `assets/videos/`. In `services.html`, add a `<button>` with an `<img>` to a service's `.thumbs` list to add a gallery photo. A comment at the top of the services list shows how to replace the main image with a `<video>`.
+
+Current photos are representative images from Wikimedia Commons. Their credits are listed in the `#credits` section in the footer of `services.html`. Update that list if you add or remove third-party images.
 
 ## Hosting
 

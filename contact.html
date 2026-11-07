@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Booking | BoogieBots.ai</title>
+  <meta name="description" content="Book BoogieBots robot and tech entertainment for birthday parties, corporate events and other parties in Texas. Call +1 (609) 664-7504 or email admin@patternstech.com.">
+  <meta name="theme-color" content="#0b0620">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="beams" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="/">Boogie<span>Bots</span>.ai</a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/packages.html">Packages</a>
+        <a href="/contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-small" href="/contact.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="badge">&#128205; Available across Texas</p>
+      <h1>Let's <span class="glow-pink">Party</span></h1>
+      <p class="sub">Tell us about your event and we'll get back to you with availability and a quote.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:+16096647504">
+            <span class="icon" aria-hidden="true">&#128222;</span>
+            <span><small>Call us</small><strong>+1 (609) 664-7504</strong></span>
+          </a>
+          <a class="contact-card" href="sms:+16096647504">
+            <span class="icon" aria-hidden="true">&#128172;</span>
+            <span><small>Text us</small><strong>+1 (609) 664-7504</strong></span>
+          </a>
+          <a class="contact-card" href="mailto:admin@patternstech.com?subject=BoogieBots%20Booking%20Inquiry">
+            <span class="icon" aria-hidden="true">&#9993;&#65039;</span>
+            <span><small>Email us</small><strong>admin@patternstech.com</strong></span>
+          </a>
+          <div class="contact-card">
+            <span class="icon" aria-hidden="true">&#129312;</span>
+            <span><small>Service area</small><strong>Texas only (for now)</strong></span>
+          </div>
+        </div>
+
+        <form class="form" id="inquiry">
+          <h2>Booking Inquiry</h2>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-type">Event type</label>
+              <select id="f-type" name="eventType" required>
+                <option>Birthday Party</option>
+                <option>Corporate Event</option>
+                <option>Other Party</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-date">Event date</label>
+              <input id="f-date" name="date" type="date">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-city">City (Texas)</label>
+              <input id="f-city" name="city" type="text" required>
+            </div>
+            <div class="field">
+              <label for="f-guests">Approx. guests</label>
+              <input id="f-guests" name="guests" type="number" min="1" inputmode="numeric">
+            </div>
+          </div>
+          <fieldset class="field" style="border:0;padding:0;margin:0 0 14px">
+            <legend>Interested in</legend>
+            <div class="checks">
+              <label><input type="checkbox" name="services" value="Humanoid Robot"> Humanoid Robot</label>
+              <label><input type="checkbox" name="services" value="Mixed Reality VR"> Mixed Reality VR</label>
+              <label><input type="checkbox" name="services" value="Robot Sketch Artist"> Sketch Artist</label>
+              <label><input type="checkbox" name="services" value="Robot 3D Printing"> 3D Printing</label>
+              <label><input type="checkbox" name="services" value="Robot Laser Engraving"> Laser Engraving</label>
+              <label><input type="checkbox" name="services" value="Photo Booth Robot"> Photo Booth Robot</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Anything else?</label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <button class="btn" type="submit">Send Inquiry</button>
+          <p class="hint">This opens your email app with your details filled in. Prefer to talk? Call or text us.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="/">Boogie<span>Bots</span>.ai</a>
+      <nav aria-label="Footer">
+        <a href="/services.html">Services</a>
+        <a href="/packages.html">Packages</a>
+        <a href="/contact.html">Contact</a>
+        <a href="tel:+16096647504">+1 (609) 664-7504</a>
+      </nav>
+      <p>&copy; <span data-year>2026</span> BoogieBots.ai &middot; A Patterns Tech LLC company &middot; Serving Texas</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
