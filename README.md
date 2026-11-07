@@ -17,6 +17,8 @@ Shared styles are in `css/styles.css` and behavior is in `js/main.js`.
 
 Put files in `assets/images/` (WebP, about 1000px wide) or `assets/videos/`. In `services.html`, add a `<button>` with an `<img>` to a service's `.thumbs` list to add a gallery photo. A comment at the top of the services list shows how to replace the main image with a `<video>`.
 
+The BoogieBots brand logo is `assets/images/boogiebots-logo.png`; it is used in the page headers and footers, as the browser icon, and in the home-page hero.
+
 Current photos are representative images from Wikimedia Commons. Their credits are listed in the `#credits` section in the footer of `services.html`. Update that list if you add or remove third-party images.
 
 ## Hosting
